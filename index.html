@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudharson | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/About.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/325b478ea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I am<br>Sudharson <span style="color: #ff004f;">V</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- About Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/About.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="line-height: 25px; text-align: justify;">I'm a passionate Full Stack Web Developer, creating dynamic and user friendly websites.
+                        Proficient in both front-end technologies like HTML, CSS, JavaScript and React JS and back-end technologies includeing
+                        C++, Python. I always eager to learn new technologies to enhance my skills and deliver innovative solutions.
+                        I thrive in dynamic environments and love tackling new challenges. I view obstacles as a chance to innovate and grow.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('service')">Service</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" style="line-height: 18px;">
+                        <ul>
+                            <li><span>Front-End Technologies</span><br>HTML, CSS, JavaScript, React JS</li>
+                            <li><span>Back-End Technologies</span><br>C++, Python</li>
+                            <li><span>Database</span><br>MySQL</li>
+                            <li><span>Others</span><br>Git and GitHub, MS Word, Typewriting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education" style="line-height: 25px;">
+                        <ul>
+                            <li><span>2021-2024</span><br>Bachelor of Arts<br>V.O. Chidambaram College of Arts and Science, Thoothukudi.</li>
+                            <li><span>2020-2021</span><br>Class XII<br>St.Francis Xavier's Hr.Sec School, Thoothukudi.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="service">
+                        <ul>
+                            <i class="fas fa-code" style="font-size: 25px; margin-bottom: 5px; color: #fff;"></i>
+                            <h2 style="color: #ff004f; margin-top: 10px;">Web Development</h2>
+                            <p style="margin-top: 10px; text-align: justify; line-height: 25px;">Crafting visually appealing and user friendly inerfaces tailored to client needs.
+                                Buildiing the client-side of websites using HTML, CSS, JavaScript and React JS to ensure
+                                responsiveness and interactive. Creating server-side logic and database management, often using
+                                languages like C++, Python and MySQL.
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Projects Section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Project 1.png">
+                    <div class="layer">
+                        <h3>ToDo Application</h3>
+                        <p>Created a responsive ToDo Web Application to note your ToDo lists. The lists are stored in system's local storage. Built with HTML, CSS and JavaScript.</p>
+                        <a href="https://to-do-rose-omega.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Project 2.png">
+                    <div class="layer">
+                        <h3>Weather Application</h3>
+                        <p>Created a Weather Application where you check weather report in city which you want to check. The reports are retrieved by API. Built with HTML, CSS and JavaScript.</p>
+                        <a href="https://weather-sudharson.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Project 3.png">
+                    <div class="layer">
+                        <h3>Food Cart</h3>
+                        <p>Food Cart is an simple user friendly and responsive food e-commerce website, with add to cart feature. Built with React Js.</p>
+                        <a href="https://foodcart-woad.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/VSudharson?tab=repositories" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+<!--Contact Section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="content-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> balajisudharson99@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8610120963</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/VSudharson" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sudharson-v" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/sudharson__2706" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://m.facebook.com/Sudharson2706/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.link/lpk68u" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="Images/Sudharson V.pdf" download="Sudharson V" class="btn btn2">Download CV</a>
+                </div>
+                <div class="content-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <input type="number" name="Number" placeholder="Your Mobile Number" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Sudharson V</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            } 
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzgcJpwlJw6xHqAvmYGGt3jBAIrxGg7lwZaNXTdDnVtEvJWJoFhzTns3xCWcQz_5WQR/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Submitted Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
